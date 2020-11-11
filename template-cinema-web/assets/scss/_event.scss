@@ -1,0 +1,136 @@
+/*
+* MOBILE
+*/
+.events {
+    .container {
+        .heading {
+            h3 {
+                position: relative;
+                color: black;
+                text-align: center;
+                margin: 50px 0 0 0;
+                text-transform: uppercase;
+                font-weight: bold;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 10px;
+                    top: 50%;
+                    margin-top: -5px;
+                    left: -15px;
+                    border: 1px solid #000;
+                    border-left: 0;
+                    border-right: 0;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    height: 10px;
+                    top: 50%;
+                    margin-top: -5px;
+                    right: -15px;
+                    border: 1px solid #000;
+                    border-left: 0;
+                    border-right: 0;
+                }
+
+                &:before,
+                &:after {
+                    border-color: #000;
+                    width: 32%;
+                }
+            }
+        }
+
+        .events-slide-area {
+            margin: 50px 0 50px 0;
+            .event-slider {
+                .single-event {
+                    .event-img {
+                        a {
+                            img {
+                                height: 200px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+* IPAD
+*/
+@media (min-width: 768px) {
+    .events {
+        .container {
+            .heading {
+                h3 {
+                    &:before {
+                        left: 0;
+                    }
+                    &:after {
+                        right: 0;
+                    }
+                    &:before,
+                    &:after {
+                        width: 38%;
+                    }
+                }
+            }
+
+            .events-slide-area {
+                margin: 50px 0 50px 0;
+                .event-slider {
+                    .single-event {
+                        .event-img {
+                            margin: 0 5px;
+                            a {
+                                img {
+                                    height: 150px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+* DESKTOP
+*/
+@media (min-width: 1025px) {
+    .events {
+        .container {
+            .heading {
+                h3 {
+                    &:before,
+                    &:after {
+                        width: 42%;
+                    }
+                }
+            }
+
+            .events-slide-area {
+                margin: 50px 0 50px 0;
+                .event-slider {
+                    .single-event {
+                        .event-img {
+                            a {
+                                img {
+                                    height: 200px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

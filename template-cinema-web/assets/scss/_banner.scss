@@ -1,0 +1,27 @@
+.banner {
+    .container {
+        padding: 0;
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        .container {
+            padding: 0 15px;
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

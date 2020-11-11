@@ -1,0 +1,144 @@
+/*
+* MOBILE
+*/
+.header {
+    .container {
+        .header-area {
+            margin-top: 40px;
+            text-align: center;
+            .logo {
+                position: fixed;
+                top: 5px;
+                margin-left: -3%;
+
+                h1 {
+                    color: #bd2121;
+                    font-weight: 600;
+                    font-family: "Monoton", sans-serif;
+                }
+            }
+            .header-right {
+                ul {
+                    li {
+                        a {
+                            color: #000;
+
+                            &:hover {
+                                color: #bd2121;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-area {
+                .responsive-menu {
+                    .slicknav_menu {
+                        .slicknav_hidden {
+                            display: none;
+                        }
+                    }
+                }
+                .mainmenu {
+                    margin-top: 20px;
+                    #primary-menu {
+                        display: none;
+                        font-weight: 600;
+                        li {
+                            a {
+                                color: #000;
+
+                                &:hover {
+                                    color: #bd2121;
+                                }
+                            }
+
+                            .theme-btn {
+                                color: #fff;
+                                &:hover {
+                                    color: #000;
+                                }
+                            }
+                            .active {
+                                color: #bd2121;
+                            }
+                            .sub-menu-level-1 {
+                                background: #fff;
+                                box-shadow: 2px 2px 5px 0px #757575;
+                                a {
+                                    padding: 10px 15px;
+                                    width: 100%;
+                                    &:hover {
+                                        background: #bd2121;
+                                        li {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+* IPAD
+*/
+@media (min-width: 768px) {
+    .header {
+        .container {
+            .header-area {
+                margin-top: 50px;
+                .logo {
+                    position: absolute;
+                    margin: 0;
+                    top: 10px;
+                    left: 28%;
+                }
+
+                .menu-area {
+                    .responsive-menu {
+                        display: none;
+                    }
+                    .primary-menu-mobile {
+                        display: none;
+                    }
+                    .mainmenu {
+                        #primary-menu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+* DESKTOP
+*/
+@media (min-width: 1025px) {
+    .header {
+        .container {
+            .header-area {
+                margin: 0;
+                .logo {
+                    top: 20px;
+                    left: auto;
+                }
+            }
+        }
+    }
+}
+
+.scroll {
+    position: fixed;
+    top: 0px;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #757575;
+    transition: 0.3s linear;
+}
